@@ -12,14 +12,17 @@ Remember that the following number of a Fibonacci sequence is the sum of the two
 */
 fun main(){
     val baseNumber = 8
-    var inputValue = 0
+    var inputValue = 1
     var stepValue = 2
-    println("First $baseNumber terms: ")
-    for (number in 1..baseNumber) {
-        println("$inputValue + ") //check
-        val sum = inputValue + stepValue
-        inputValue = stepValue
-        stepValue = sum
+//    println("First $baseNumber terms: ")
+//    for (number in 1..baseNumber) {
+//        println("$inputValue + ") //check
+//        val sum = inputValue + stepValue
+//        inputValue = stepValue
+//        stepValue = sum
+//    }
+    for(value in inputValue..baseNumber) {
+        println(value * stepValue)
     }
 }
 //fibonacci sequence
